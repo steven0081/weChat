@@ -4,15 +4,14 @@ import os
 
 itchat.auto_login(hotReload=True)
 
+#发送信息给好友
 result = itchat.search_friends(name='董黎')
+#发送信息给群
+#result = itchat.search_chatrooms(name='疯狂摩的司机群')
+
 user_name = result[0]['UserName']
 
-path= 'I:\\PycharmProjects\\paChong\\mzitu'
-file_list = os.listdir(path)
-print(len(file_list))
-for f in file_list:
-    itchat.send_image(path+'\\'+f, user_name)
-    time.sleep(1)
+itchat.send_msg('撸起，帅多！',user_name)
 
 
 
