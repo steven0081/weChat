@@ -1,6 +1,8 @@
 import itchat
 
 
+#微信中自动回复
+
 @itchat.msg_register(itchat.content.TEXT)
 def reply_msg(msg):
     print(msg)

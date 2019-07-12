@@ -11,7 +11,7 @@ result = itchat.search_friends(name='董黎')
 
 user_name = result[0]['UserName']
 
-itchat.send_msg('撸起，帅多！',user_name)
+itchat.send_msg('撸起，帅多！', user_name)
 
 
 
